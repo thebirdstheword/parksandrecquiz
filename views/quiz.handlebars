@@ -1,0 +1,105 @@
+<h2> High Scores </h2>
+<table>
+    {{#each scores}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.scores}}</td>  
+        </tr> 
+    {{/each}}
+</table>
+
+<form method="POST" action="/submit">
+
+    <input type="text"  name="name" placeholder="Your Name" id="namebox">
+
+    <h2>Question 1</h2>
+    <p>What town was Ben Wyatt the mayor of at age 18?</p>
+        <input type="radio" name="question_one" value="Pawnee, Indiana">Pawnee, Indiana<br>
+        <input type="radio" name="question_one" value="Partridge, Minnesota">Partridge, Minnesota<br>
+        <input type="radio" name="question_one" value="Davenport, Iowa">Davenport, Iowa<br>
+        <input type="radio" name="question_one" value="Petosky, Michigan">Petosky, Michigan<br>
+
+        <hr>
+
+    <h2>Question 2</h2>
+    <p>Why does Jean-Ralphio fake his own death?</p>
+        <input type="radio" name="question_two" value="To escape the mob">To escape the mob<br>
+        <input type="radio" name="question_two" value="He was bored">He was bored<br>
+        <input type="radio" name="question_two" value="So he and Mona Lisa could build a casino in Tajikistan with the insurance money">So he and Mona Lisa could build a casino in Tajikistan with the insurance money<br>
+        <input type="radio" name="question_two" value="He couldn't live without the love of his life, Leslie">He couldn't live without the love of his life, Leslie<br>
+
+        <hr>
+
+    <h2>Question 3</h2>
+    <p>What is Diane's middle name?</p>
+        <input type="radio" name="question_three" value="Elizabeth">Elizabeth<br>
+        <input type="radio" name="question_three" value="Tammy">Tammy<br>
+        <input type="radio" name="question_three" value="Barbara">Barbara<br>
+        <input type="radio" name="question_three" value="Heather">Heather<br>
+
+        <hr>
+
+    <h2>Question 4</h2>
+    <p>Whose pool house did lifestyle guru Annabel Porter live in when she went to LA?</p>
+        <input type="radio" name="question_four" value="Kirsten Dunst">Kirsten Dunst<br>
+        <input type="radio" name="question_four" value="Sienna Miller">Sienna Miller<br>
+        <input type="radio" name="question_four" value="Kate Bosworth">Kate Bosworth<br>
+        <input type="radio" name="question_four" value="Nichole Richie">Nichole Richie<br>
+
+        <hr>
+
+    <h2>Question 5</h2>
+        <p>What is April’s favorite band?</p>
+            <input type="radio" name="question_five" value="Mouse Rat">Mouse Rat<br>
+            <input type="radio" name="question_five" value="Neutral Milk Hotel">Neutral Milk Hotel<br>
+            <input type="radio" name="question_five" value="Swanky Baby Toes">Swanky Baby Toes<br>
+            <input type="radio" name="question_five" value="Eagle-Eye Tiger">Eagle-Eye Tiger<br>
+
+            <hr>
+
+    <h2>Question 6</h2>
+        <p>Who tells Leslie that her river clean-up proposal "wasn't half bad"?</p>
+            <input type="radio" name="question_six" value="Liam Bonneville">Liam Bonneville<br>
+            <input type="radio" name="question_six" value="Michelle Obama">Michelle Obama<br>
+            <input type="radio" name="question_six" value="Joe Biden">Joe Biden<br>
+            <input type="radio" name="question_six" value="Grant Larson">Grant Larson<br>
+
+            <hr>
+    
+    <h2>Question 7</h2>
+        <p>Which 90's supermodel plays Jerry's wife?</p>
+            <input type="radio" name="question_seven" value="Claudia Schiffer">Claudia Schiffer<br>
+            <input type="radio" name="question_seven" value="Christie Brinkley">Christie Brinkley<br>
+            <input type="radio" name="question_seven" value="Stephanie Seymour">Stephanie Seymour<br>
+            <input type="radio" name="question_seven" value="Linda Evangelista">Linda Evangelista<br>
+
+            <hr>
+
+    <h2>Question 8</h2>
+        <p>Which of the following is not a Tom Haverford–ism?</p>
+            <input type="radio" name="question_eight" value="Cool blasterz, for air conditioners">Cool blasterz, for air conditioners<br>
+            <input type="radio" name="question_eight" value="Fry-fry chicky-chick, for fried chicken">Fry-fry chicky-chick, for fried chicken<br>
+            <input type="radio" name="question_eight" value="Cheese pillows, for ravioli">Cheese pillows, for ravioli<br>
+            <input type="radio" name="question_eight" value="Future birds, for eggs">Future birds, for eggs<br>
+
+            <hr>
+
+    <h2>Question 9</h2>
+        <p>What did Tammy 1 do to Tammy 2?</p>
+            <input type="radio" name="question_nine" value="She lit her hair on fire">She lit her hair on fire<br>
+            <input type="radio" name="question_nine" value="She poured acid on her feet">She poured acid on her feet<br>
+            <input type="radio" name="question_nine" value="She pepper-sprayed her face">She pepper-sprayed her face<br>
+            <input type="radio" name="question_nine" value="She shaved her head">She shaved her head<br>
+
+            <hr>
+
+    <h2>Question 10</h2>
+        <p>At the beginning of the series, why did Andy fall into the pit and break both his legs?</p>
+            <input type="radio" name="question_ten" value="He was drunk and tried to go sledding">He was drunk and tried to go sledding<br>
+            <input type="radio" name="question_ten" value="He was drunk and wanted to get back a toaster">He was drunk and wanted to get back a toaster<br>
+            <input type="radio" name="question_ten" value="He was drunk and thought he saw someone he knew down there">He was drunk and thought he saw someone he knew down there<br>
+            <input type="radio" name="question_ten" value="He was sober, actually — it just kind of happened">He was sober, actually — it just kind of happened<br>
+
+            <hr>
+    <input class="btn btn-default" input type="submit" value="Submit">
+</form>
